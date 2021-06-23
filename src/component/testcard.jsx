@@ -1,4 +1,4 @@
-import { auto } from "async";
+//import { auto } from "async";
 import {
   GiNinjaHeroicStance,
   GiWingedLeg,
@@ -8,10 +8,10 @@ export const Dotacard = (props) => {
   return (
     <div
       style={{
-        width: 400,
+        width: 360,
         height: 160,
-        margin: 20,
-        padding: 25,
+        margin: 10,
+        padding: 10,
         backgroundColor: "lightblue",
         borderRadius: 5,
         display: "flex",
