@@ -1,4 +1,4 @@
-//import logo from "./logo.svg";
+import logo from "./logo.svg";
 import "./App.css";
 import { Dotacard } from "./component/testcard";
 import { useEffect, useState } from "react";
@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Homepage from "./pages/homepage";
 import DotaHeroPage from "./pages/dota-hero";
 import ProPlayerPage from "./pages/pro-player";
+import CrudPage from "./pages/crudpage";
 
 function App() {
   return (
@@ -17,13 +18,15 @@ function App() {
         <nav>
           <Header />
         </nav>
-
         <Switch>
           <Route path="/dota-hero">
             <DotaHeroPage />
           </Route>
           <Route path="/pro-player">
             <ProPlayerPage />
+          </Route>
+          <Route path="/crud">
+            <CrudPage />
           </Route>
           <Route path="/">
             <Homepage />
